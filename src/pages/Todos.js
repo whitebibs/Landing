@@ -31,18 +31,11 @@ export const Todos = () => {
   }
   const todoList = currentTodos.map((todos) => (
     <li key={todos.id} className="p-3 m-2 border-2 border-blue-400 border-solid">
-      <table className="flex flex-col">
-        <thead>
-          <th>TITLE</th>
-          <th>ID</th>
-          <th>Completed</th>
-        </thead>
-        <tbody>
-        <td>{todos.title}</td>
-        <td>{todos.id}</td>
-        <td>{todos.completed ? "Completed" : "Not Completed"}</td>
-        </tbody>
-      </table>
+      <div className="flex flex-col">
+        <h2>{todos.title}</h2>
+        <h2>{todos.id}</h2>
+        <h2>{todos.completed ? "Completed" : "Not Completed"}</h2>
+      </div>
     </li>
   ))
   return (
