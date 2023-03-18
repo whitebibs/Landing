@@ -34,7 +34,6 @@ const postsList = currentPosts.map((post)=> (
   <li key={post.id}  className="p-3 m-2 font-extrabold border-2 border-black border-solid">
     <div>
       <h2  className="text-black">{post.title}</h2>
-      <h2>{post.id}</h2>
       <h2 className="text-red-600">{post.body}</h2>
     </div>
   </li>

@@ -33,8 +33,7 @@ export const Todos = () => {
     <li key={todos.id} className="p-3 m-2 border-2 border-blue-400 border-solid">
       <div className="flex flex-col">
         <h2>{todos.title}</h2>
-        <h2>{todos.id}</h2>
-        <h2>{todos.completed ? "Completed" : "Not Completed"}</h2>
+         <h2>{todos.completed ? "Completed" : "Not Completed"}</h2>
       </div>
     </li>
   ))
